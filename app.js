@@ -1,7 +1,7 @@
 let hashir = () => {
 
     let cityy = document.querySelector("#city").value;
-    axios.get(`https://api.weatherapi.com/v1/current.json?key=25175e31b7074cfc895204529222906&q=${cityy}`)
+    axios.get(`https://api.weatherapi.com/v1/current.json?key=6fda1dddbd6041678a1161253220107&q=${cityy}`)
         .then(function (response) {
             // handle success
             const data = response.data;
@@ -13,13 +13,7 @@ let hashir = () => {
             console.log(icon);
             document.querySelector("#weather_icon").src = icon;
 
-
-
-
             document.querySelector("#tempC").innerText = data.current.temp_c + "°C";
-            document.querySelector("#tempF").innerText = "Fahrenheit : " + data.current.temp_f + "°F";
-
-
             document.querySelector("#city_name").innerText = data.location.name + ", " + data.location.region + ", " + data.location.country;
             document.querySelector("#weather_condition").innerText = data.current.condition.text;
 
@@ -27,15 +21,8 @@ let hashir = () => {
             document.querySelector("#wind_speed").innerText = "Wind Speed: " + data.current.wind_kph + "KP/H";
             document.querySelector("#humidity").innerText = "Humidity: " + data.current.humidity + "%";
 
-
             document.querySelector("#visibility").innerText = "Visibility : " + data.current.vis_km + "KM";
             document.querySelector("#weather_condition").innerText = data.current.condition.text;
-            document.querySelector("#weather_condition").innerText = data.current.condition.text;
-            document.querySelector("#weather_condition").innerText = data.current.condition.text;
-
-
-
-
-
+            
         })
     }

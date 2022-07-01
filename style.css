@@ -10,16 +10,25 @@ html,body{
   display: grid;
   height: 100%;
   place-items: center;
-  background: #0d0d0d;
+  background: url(bg.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    animation: animate 5s ease-in-out infinite;
 }
 h1{
-  color: azure;
+  color: rgb(255, 255, 255);
   font-size: 60px;
 }
 input{
 height: 50px;
 width: 450px;
 font-size: small;
+}
+
+button{
+  
 }
 
 button{
@@ -94,5 +103,40 @@ input:focus{
 
 input:hover {
   border: 2px solid #ce5c0c;
-  /* border-radius: 5px; */
+}
+
+#tempC {
+  font-size: 100px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  margin: 18px;
+  padding: 18px;
+}
+
+.flex {
+  justify-content: space-around;
+}
+
+.iconscontainer {
+  list-style: none;
+  display: flex;
+  fill: #ffffff;
+  margin: 15px;
+}
+
+.icon {
+  padding-right: 13px;
+  fill: white;
+  width: 18px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  fill: #fffc3a;
 }
