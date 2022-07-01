@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b896963d9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./mobileStyle.css" media="(max-device-width:380px)">
+</head>
+
+<center><body>
+        <h1>Weather App</h1><hr><br>
+        <h3 >Enter The Name of Your City to Find the Weather report</h3><br><br>
+        <input type="text" id="city" placeholder="Your City Name"><br><br><br>
+        <form onsubmit="hashir(); return false" class="form">
+            <button type="submit">Search</button>
+        </form>
+        <br>
+    
+    <div class="body_padding_div">
+
+        
+        <div class="main_container">
+            <img src="" alt="" id="weather_icon">
+            <div id="tempC"></div>
+        </div>
+        <div class="flex">
+            <div id="city_name"></div>
+            <div id="weather_condition"></div>
+        </div>
+        <br>
+        <div id="tempF"></div><br>
+        <div id="feels_like"></div><br>
+        <div id="humidity"></div><br>
+        <!-- <div id="cloud"></div>
+<div id="temp_f"></div>
+<div id="wind"></div> -->
+        <div id="visibility"></div><br>
+        <div id="wind_speed"></div>
+
+    </div>
+    </body></center>
+</html>
+<script src="app.js"></script>
